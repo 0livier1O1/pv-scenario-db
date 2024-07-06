@@ -1,0 +1,7 @@
+botorch==0.11.1
+dash==2.17.1
+pandas==2.2.2
+plotly==5.22.0
+torch==2.2.2
+gunicorn
+dash-tools
