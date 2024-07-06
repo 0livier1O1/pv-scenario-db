@@ -34,8 +34,9 @@ failed_buses = f_b_df0.columns[~b_null]
 critical_scenarios = list(is_non_dominated(y0).float().nonzero().squeeze().tolist())
 
 # Initialize the app
-app = Dash()
+app = Dash(__name__)
 
+server = app.server
 
 app.layout = html.Div([
     html.Div([
